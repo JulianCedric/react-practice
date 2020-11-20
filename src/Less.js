@@ -9,6 +9,6 @@ class Less extends React.Component {
             </div>
         );
     }
-}
+};
  
 export default Less;
