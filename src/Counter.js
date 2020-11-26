@@ -1,9 +1,10 @@
 import React from 'react';
+import { Button } from 'semantic-ui-react';
 
 class Counter extends React.Component {
     state = {  
         count: 0,
-        imageUrl: 'https://picsum.photos/200'
+        letters: ['a', 'b', 'c']
     };
 
     formatCount() {
@@ -13,10 +14,11 @@ class Counter extends React.Component {
     render() { 
         return (  
             <div>
-                <img src={this.state.imageUrl} alt="" />
-                <span>{this.state.count}</span>
-                <span>{this.formatCount()}</span>
-                <button>Increment</button>
+                <h1>{this.formatCount()}</h1>
+                <Button primary>Increment</Button>
+                <ul>
+                    {this.state.letters.map(letter => <li key={letter}>{letter}</li>)}
+                </ul>
             </div>
         );
     }
