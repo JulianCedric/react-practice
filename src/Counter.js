@@ -6,19 +6,16 @@ class Counter extends React.Component {
         count: 0,
         letters: ['a', 'b', 'c']
     };
-
-    formatCount() {
-        return this.state.count === 0 ? 'Zero' : this.state.count;
+    
+    renderLetters() {
+        if (this.state.letters.length === 0) return <p>There are no letters!</p>
+        return <ul>{this.state.letters.map(letter => <li key={letter}>{letter}</li>)}</ul>
     }
 
     render() { 
         return (  
             <div>
-                <h1>{this.formatCount()}</h1>
-                <Button primary>Increment</Button>
-                <ul>
-                    {this.state.letters.map(letter => <li key={letter}>{letter}</li>)}
-                </ul>
+                {this.renderLetters()}
             </div>
         );
     }
