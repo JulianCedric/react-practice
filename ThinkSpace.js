@@ -83,3 +83,7 @@ class Counter extends React.Component {
 }
  
 export default Counter; 
+
+// Movies Table
+
+<table class="ui celled table"><thead class=""><tr class=""><th class="">Header</th><th class="">Header</th><th class="">Header</th></tr></thead><tbody class=""><tr class=""><td class=""><div class="ui ribbon label">First</div></td><td class="">Cell</td><td class="">Cell</td></tr><tr class=""><td class="">Cell</td><td class="">Cell</td><td class="">Cell</td></tr><tr class=""><td class="">Cell</td><td class="">Cell</td><td class="">Cell</td></tr></tbody><tfoot class=""><tr class=""><th colSpan="3" class=""><div class="ui pagination right floated menu"><a class="icon item"><i aria-hidden="true" class="chevron left icon"></i></a><a class="item">1</a><a class="item">2</a><a class="item">3</a><a class="item">4</a><a class="icon item"><i aria-hidden="true" class="chevron right icon"></i></a></div></th></tr></tfoot></table>
